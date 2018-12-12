@@ -22,7 +22,7 @@ int main(void)
 	for (char *p = str; *p != '\0'; p++) {
 		if ((int)*p < '*' || (int)*p == ',' || (int)*p > '9') {
 			printf("\n> Input error. Your expression has an invalid symbol.\n"
-				"It is allowed to enter only digits, the dot \ '. \', And operations characters *, /, +,- \n Repeat the entry! \n \n");
+				"It is allowed to enter only digits, the dot \'. \', And operations characters *, /, +,- \n Repeat the entry! \n \n");
 			rewind(stdin);
 			gets(str);
 			p = str;
